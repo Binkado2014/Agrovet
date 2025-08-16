@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgroVet Agricultural & Livestock Enterprises</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    /* General Reset */
+    * {margin:0; padding:0; box-sizing:border-box; font-family: 'Arial', sans-serif;}
+
+    body {background-color:#0b2545; color:#fff; line-height:1.6;}
+    a {text-decoration:none; color:inherit;}
+
+    /* Header */
+    header {background:#0a1f3a; padding:15px 0; position:sticky; top:0; z-index:1000;}
+    .container {width:90%; max-width:1200px; margin:0 auto; display:flex; justify-content:space-between; align-items:center;}
+    .brand h1 {color:#fff; font-size:24px;}
+    .nav-links {list-style:none; display:flex; gap:20px;}
+    .nav-links li a {color:#fff; transition:0.3s;}
+    .nav-links li a:hover {color:#00bfff;}
+    .menu-btn {display:none; background:none; border:none; color:#fff; font-size:24px; cursor:pointer;}
+
+    /* Banner */
+    .banner {background:#005f99; text-align:center; padding:10px; font-size:14px;}
+
+    /* Hero */
+    .hero {padding:60px 0; display:flex; justify-content:center; align-items:center; flex-wrap:wrap; gap:40px;}
+    .hero-wrap {max-width:1200px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:40px;}
+    .hero h2 {font-size:36px; color:#00bfff;}
+    .hero p {font-size:18px; margin:20px 0;}
+    .btn {background:#00bfff; color:#fff; padding:10px 20px; border:none; border-radius:5px; cursor:pointer; transition:0.3s;}
+    .btn:hover {background:#0091cc;}
+    .btn.secondary {background:#fff; color:#0b2545;}
+    .btn.secondary:hover {background:#e0e0e0;}
+    .hero-card {background:#06203a; padding:20px; border-radius:10px; text-align:center;}
+    .hero-card i {font-size:36px; color:#00bfff; margin-bottom:10px;}
+
+    /* Features */
+    #features {padding:60px 0;}
+    .sec {text-align:center; font-size:32px; color:#00bfff; margin-bottom:40px;}
+    .features-grid {display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px;}
+    .feature {background:#06203a; padding:20px; border-radius:10px; text-align:center;}
+    .feature i {font-size:36px; color:#00bfff; margin-bottom:10px;}
+
+    /* Tokens */
+    #tokens {padding:60px 0;}
+    .token-wrap {display:flex; flex-wrap:wrap; gap:20px; justify-content:center;}
+    .balance-card, .token {background:#06203a; padding:20px; border-radius:10px; width:300px; text-align:center;}
+    .token-logo {width:50px; margin-bottom:10px;}
+    .badge {background:#00bfff; color:#fff; padding:3px 8px; border-radius:5px; font-size:12px;}
+
+    /* Tracking */
+    #tracking {padding:60px 0;}
+    .tracking-wrap {display:flex; flex-wrap:wrap; gap:20px; justify-content:center;}
+    .qr, .timeline {background:#06203a; padding:20px; border-radius:10px; width:300px; text-align:center;}
+    .qr i {font-size:48px; color:#00bfff; margin-bottom:10px;}
+
+    /* Contact */
+    #contact {padding:60px 0;}
+    .contact-wrap {display:flex; flex-wrap:wrap; gap:20px; justify-content:center;}
+    .contact-info, .contact-form {background:#06203a; padding:20px; border-radius:10px; width:300px;}
+    .contact-item {margin-bottom:10px;}
+    input, textarea {width:100%; padding:10px; margin-bottom:10px; border:none; border-radius:5px;}
+    input:focus, textarea:focus {outline:none;}
+    button[type="submit"] {width:100%;}
+
+    /* Footer */
+    footer {text-align:center; padding:20px; background:#0a1f3a; margin-top:40px;}
+
+    /* Responsive */
+    @media(max-width:768px){
+      .nav-links {display:none; flex-direction:column; gap:10px; background:#0a1f3a; position:absolute; top:60px; right:0; width:200px; padding:20px; border-radius:10px;}
+      .nav-links.active {display:flex;}
+      .menu-btn {display:block;}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="brand">
+        <h1>AgroVet</h1>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#features">Services</a></li>
+        <li><a href="#tokens">Tokens</a></li>
+        <li><a href="#tracking">Tracking</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="menu-btn" id="menuBtn"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <div class="banner">
+    <i class="fas fa-bell"></i> Welcome to AgroVet Supply Chain Tracking
+  </div>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-wrap">
+      <div>
+        <h2>AgroVet Agricultural & Livestock Enterprises</h2>
+        <p>Leading innovation in agriculture and livestock management using blockchain technology.</p>
+        <a href="#contact" class="btn">Contact Us</a>
+        <a href="#tokens" class="btn secondary">View Tokens</a>
+      </div>
+      <div class="hero-card">
+        <i class="fas fa-tractor"></i>
+        <h3>Smart Farming</h3>
+        <p>Track farm activities and livestock health in real-time.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features">
+    <h2 class="sec">Our Services</h2>
+    <div class="features-grid">
+      <div class="feature">
+        <i class="fas fa-cow"></i>
+        <h4>Livestock Management</h4>
+        <p>Monitor health, feed, and breeding records easily.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-seedling"></i>
+        <h4>Crops Tracking</h4>
+        <p>Track crops from planting to harvest.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-warehouse"></i>
+        <h4>Supply Chain</h4>
+        <p>Ensure transparency from farm to consumer.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tokens -->
+  <section id="tokens">
+    <h2 class="sec">Token Dashboard</h2>
+    <div class="token-wrap">
+      <div class="balance-card">
+        <h3>AGRO Token Balance</h3>
+        <div class="balance" id="tokenBalance">0.00 AGRO</div>
+        <button class="btn" id="refreshBalance">Refresh Balance</button>
+        <button class="btn secondary" id="sendTokens">Send Tokens</button>
+      </div>
+      <div class="token">
+        <div class="token-head">
+          <img src="token.png" alt="AGRO Token" class="token-logo">
+          <h4>AGRO Token</h4>
+          <span class="badge">ERC-20</span>
+        </div>
+        <ul class="token-meta">
+          <li>Symbol: AGRO</li>
+          <li>Total Supply: 1,000,000</li>
+          <li>Price: $0.10</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tracking -->
+  <section id="tracking">
+    <h2 class="sec">Product Tracking</h2>
+    <div class="tracking-wrap">
+      <div class="qr">
+        <i class="fas fa-qrcode"></i>
+        <p>Scan the QR code to track your product</p>
+        <button class="btn" id="scanBtn">Scan</button>
+      </div>
+      <div class="timeline" id="timeline">
+        <p>Timeline will appear here after scanning.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2 class="sec">Contact Us</h2>
+    <div class="contact-wrap">
+      <div class="contact-info">
+        <div class="contact-item"><i class="fas fa-phone"></i> 08035579935</div>
+        <div class="contact-item"><i class="fas fa-envelope"></i> info@agrovet.com</div>
+        <div class="contact-item"><i class="fas fa-map-marker-alt"></i> Dutsin Safe Low-Cost, Katsina</div>
+      </div>
+      <div class="contact-form">
+        <form id="contactForm">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Email Address" required>
+          <textarea placeholder="Message" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 AgroVet Agricultural & Livestock Enterprises</p>
+  </footer>
+
+  <!-- JS -->
+  <script>
+    // Mobile Menu Toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const navLinks = document.getElementById('navLinks');
+    menuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Dummy Token Balance Refresh
+    const refreshBtn = document.getElementById('refreshBalance');
+    const tokenBalance = document.getElementById('tokenBalance');
+    refreshBtn.addEventListener('click', () => {
+      tokenBalance.textContent = (Math.random()*1000).toFixed(2) + ' AGRO';
+    });
+
+    // Dummy Send Tokens
+    const sendBtn = document.getElementById('sendTokens');
+    sendBtn.addEventListener('click', () => {
+      alert('Send Tokens function is not implemented yet.');
+    });
+
+    // Dummy Scan Button
+    const scanBtn = document.getElementById('scanBtn');
+    scanBtn.addEventListener('click', () => {
+      document.getElementById('timeline').innerHTML = '<p>Product scanned successfully! Tracking info will appear here.</p>';
+    });
+
+    // Contact Form Submit
+    const contactForm = document.getElementById('contactForm');
+    contactForm.addEventListener('submit', e => {
+      e.preventDefault();
+      alert('Message sent successfully!');
+      contactForm.reset();
+    });
+  </script>
+</body>
+                                </html>
