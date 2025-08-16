@@ -64,3 +64,20 @@ This integration ensures that agricultural products managed under Agrovet are ve
 
 All project code, demos, and documentation are hosted on this GitHub repository:  
 [Agrovet GitHub](https://github.com/Binkado2014/Agrovet)
+
+---
+
+## Partnership with AgroChain-HTS
+
+Agrovet leverages **AgroChain-HTS** for:
+
+- Blockchain-based verification of livestock and farm products.
+- Secure and transparent transaction tracking.
+- Tokenized rewards (AGRO & AMG) for farmers and participants.
+- Enhancing youth engagement through digital farm management.
+
+---
+
+## License
+
+MIT License
